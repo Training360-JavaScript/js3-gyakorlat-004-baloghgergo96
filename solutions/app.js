@@ -12,8 +12,8 @@ const checker = {
         else if(pattern === "ip"){
             return this.rules.checkIP(string)
         }
-        else {
-            return this.rules.checkMac(string)
+        else if(pattern === "mac"){
+            return this.rules.checkMAC(string)
         }
     }
 };
